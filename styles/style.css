@@ -14,6 +14,11 @@ ul {
   list-style: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .container {
   max-width: 1900px;
   padding-right: 130px;
@@ -40,7 +45,6 @@ ul {
   font-family: 'Inter';
   font-weight: 500;
   color: #6E7275;
-  
 }
 
 .empresa {
@@ -89,6 +93,7 @@ ul {
 }
 
 .funciona-lista li img {
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -279,4 +284,102 @@ ul {
   color: #293145;
   font-size: 1.25rem;
   line-height: 25px;
+}
+
+@media (max-width: 1000px) {
+
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .header img {
+    margin-right: 160px;
+  }
+
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+
+  .empresa-conteudo h1 {
+    font-size: 2.5rem;
+    color: #293145;
+    padding-top: 60px;
+  }
+
+  .empresa h1 {
+    object-fit: cover;
+  }
+
+  .funcionalidades h2 {
+    font-size: 2.5rem;
+  }
+
+  .planos-cards  {
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .funciona-lista {
+    flex-wrap: wrap;
+  }
+
+  .funciona-lista li img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  } 
+
+  .planos-cards li {
+    padding: 20px 30px;
+  }
+
+  .app {
+    grid-template-columns: 1fr;
+  }
+  
+  .app-buttons {
+    max-width: 150px;
+  }
+
+  .header {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .header-menu {
+    display: flex;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    align-items: center;
+    padding: 10px;
+    gap: 4px;
+    position: relative;
+    z-index: 700;
+  }
+
+  .header-menu li a{
+    display: none;
+  }
+
+  .header-menu::before {
+    content: '';
+    display: inline-block;
+    height: 3px;
+    width: 20px;
+    background: #0F9AFE;
+    box-shadow: 0 6px #0F9AFE, 0 -6px #0F9AFE;
+    transition: transform .3s;
+  }
+
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
