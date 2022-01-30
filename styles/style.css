@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Sora';
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1900px;
+  padding-right: 130px;
+  padding-left: 130px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.header {
+  max-width: 1900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 60px;
+}
+
+.header-menu li a {
+  font-family: 'Inter';
+  font-weight: 500;
+  color: #6E7275;
+  
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #EFF8FF;
+}
+
+.empresa-conteudo h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  color: #293145;
+  padding-top: 90px;
+}
+
+.empresa-conteudo a {
+  font-family: 'Inter';
+  display: block;
+  margin-top: 50px;
+  width: 200px;
+  height: 56px;
+  background-color: #0F9AFE;
+  border-radius: 50px;
+  text-align: center;
+  padding: 16px 36px;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+}
+
+.funcionalidades h2 {
+  text-align: center;
+  color: #293145;
+  font-size: 2.5rem;
+}
+
+.funciona-lista {
+  margin-top: 90px;
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.funciona-lista li {
+  text-align: center;
+  max-width: 380px;
+}
+
+.funciona-lista li img {
+  margin-bottom: 30px;
+}
+
+.funciona-lista li h3 {
+  margin-bottom: 16px;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  background-color: #EFF8FF;
+}
+
+.app-conteudo {
+  margin-top: 60px;
+}
+
+.app-conteudo h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #293145;
+}
+
+.app-conteudo p {
+  font-family: 'Inter';
+  font-weight: 400;
+  max-width: 450px;
+  color: #6E7275;
+  margin-bottom: 35px;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.planos h2 {
+  text-align: center;
+  color: #293145;
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.planos p {
+  font-family: 'Roboto';
+  color: #6E7275;
+  font-size: 1.125rem;
+}
+
+.plano-text {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.planos-cards  {
+  display: flex;
+  gap: 90px;
+  flex: 1;
+}
+
+.planos-cards li {
+  width: 470px;
+  height: 520px;
+  background-color: #EFF8FF;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.planos-cards li h3 {
+  color: #293145;
+  font-size: 1.5rem;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.planos-cards li .preco {
+  font-size: 2rem;
+  color: #293145;
+  margin-bottom: 50px;
+}
+
+.planos-cards li a {
+  display: block;
+  width: 230px;
+  height: 50px;
+  background-color: #0F9AFE;
+  color: #FFFFFF;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 12px 80px;
+}
+
+.plano-card.card-escuro {
+  background-color:  #293145;
+}
+
+.plano-card.card-escuro h3,
+.plano-card.card-escuro p{
+  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+
+.plano-card.card-escuro .text-escuro {
+  color: #DBDBDB;
+}
+
+.plano-card.card-escuro .button-preferido {
+  display: block;
+  width: 160px;
+  height: 27px;
+  background-color: #0F9AFE;
+  margin: 0 auto;
+  margin-bottom: 37px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: .125rem;
+  padding-top: 3px;
+}
+
+.contato-bg {
+  background: url(../assets/contato-bg.svg);
+}
+
+.contato-titulo {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.contato-texto {
+  font-family: 'Roboto';
+  font-size: 1.25rem;
+  color: #DBDBDB;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.form-contato {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.form-contato input {
+  width: 300px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #FFFFFF;
+  outline: none;
+}
+
+.form-contato input::-webkit-input-placeholder {
+  font-family: 'Inter';
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  font-size: 1.125rem;
+}
+
+.form-contato button {
+  font-family: 'Inter';
+  font-weight: 500;
+  width: 120px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #0F9AFE;
+  color: #FFFFFF;
+  font-size: 1.125rem;
+  padding: 8px 32px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.footer p {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: normal;
+  color: #293145;
+  font-size: 1.25rem;
+  line-height: 25px;
+}
